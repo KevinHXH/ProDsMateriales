@@ -10,6 +10,7 @@ namespace Capa.Datos
 {
     public class CategoriaProductoDatos
     {
+        Prueba2
         public void insertar(CategoriaProductoEntidad categoriaProductoEntidad)
         {
             string sql = @"Insert into CategoriaProducto(NombreCategoriaProducto,Estado) values (@NombreCategoriaProducto,@Estado)";
