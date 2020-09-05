@@ -1,0 +1,48 @@
+﻿.hero__categories__all {
+    background: #b7456f;
+   
+}
+
+.header__menu ul li.active a {
+    color: #c8c74b;
+}
+
+.hero__search {
+    background: #b7456f;
+}
+
+.hero__search__phone__icon {
+    
+    color: transparent;
+    background: no-repeat;
+}
+
+.hero__item {
+    height: 451px;
+    max-width: 100%;
+    
+}
+
+
+.material-icons {
+    color: #c8c74b;
+}
+
+.header__cart {
+    color: #252525;
+    font: 14px Cairo, sans-serif;
+    font-weight: 700;
+    -webkit-transition: all, 0.3s;
+    -moz-transition: all, 0.3s;
+    -o-transition: all, 0.3s;
+}
+
+.header__menu ul li a {
+    text-transform: capitalize;
+}
+
+.categories__item h5 a {
+    text-transform: capitalize;
+}
+
+
