@@ -16,6 +16,7 @@ namespace Capa.LogicaNegocios
             UsuarioDatos.insertar(usuario);
         }
 
+
         public static List<UsuarioEntidad> ObtenerTodosUsuario()
         {
             List<UsuarioEntidad> lista = new List<UsuarioEntidad>();
