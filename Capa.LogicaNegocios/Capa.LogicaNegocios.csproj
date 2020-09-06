@@ -42,6 +42,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SucursalLN.cs" />
+    <Compile Include="TipoUsuarioLN.cs" />
+    <Compile Include="UsuarioLN.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Capa.Datos\Capa.Datos.csproj">
+      <Project>{3B38332E-4C45-4C2C-986A-D25BDEE39CF6}</Project>
+      <Name>Capa.Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Capa.Entidad\Capa.Entidad.csproj">
+      <Project>{02B6E143-A7CC-4381-88E1-453808304960}</Project>
+      <Name>Capa.Entidad</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,6 +1,8 @@
 ﻿using Capa.Entidad;
+using ProyectoDatos;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -11,7 +13,7 @@ namespace Capa.Datos
     public class SucursalDatos
     {
         // Insertar
-        public void insertar(SucursalEntidad sucursal) {
+        public static void insertar(SucursalEntidad sucursal) {
             string sql = @"Insert into Sucursal(NombreProvincia,CorreoElectronico,Ubicacion,Telefono,Estado) values (@NombreProvincia,@CorreoElectronico,@Ubicacion,@Telefono,@Estado)";
             SqlCommand cmd = new SqlCommand();
             cmd.Parameters.AddWithValue("@NombreProvincia", sucursal.NombreProvincia);
@@ -54,11 +56,14 @@ namespace Capa.Datos
             cmd.CommandText = sql;
         }
         // Select ALL 
-        public void seleccionarTodos()
+        public static DataSet seleccionarTodos()
         {
+            Database db = DatabaseFactory.CreateDatabase("default");
             string sql = @"Select  IdSucursal,NombreProvincia,CorreoElectronico,Ubicacion,Telefono,Estado  from  Sucursal";
             SqlCommand cmd = new SqlCommand();
             cmd.CommandText = sql;
+            DataSet ds = db.ExecuteReader(cmd, "Sucursal");
+            return ds;
         }
     }
 }

@@ -252,6 +252,16 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Capa.Entidad\Capa.Entidad.csproj">
+      <Project>{02B6E143-A7CC-4381-88E1-453808304960}</Project>
+      <Name>Capa.Entidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Capa.LogicaNegocios\Capa.LogicaNegocios.csproj">
+      <Project>{58900052-38A1-4619-ADD6-EF00640D9460}</Project>
+      <Name>Capa.LogicaNegocios</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

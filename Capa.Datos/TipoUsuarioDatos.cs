@@ -1,6 +1,8 @@
 ﻿using Capa.Entidad;
+using ProyectoDatos;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -44,11 +46,14 @@ namespace Capa.Datos
             cmd.Parameters.AddWithValue("@IdTipoUsuario", tipoUsuario.IdTipoUsuario);
             cmd.CommandText = sql;
         }
-        public void seleccionarTodos()
+        public static DataSet seleccionarTodos()
         {
+            Database db = DatabaseFactory.CreateDatabase("default");
             string sql = @"Select  IdTipoUsuario,NombreTipoUsuario,Estado  from  TipoUsuario";
             SqlCommand cmd = new SqlCommand();
             cmd.CommandText = sql;
+            DataSet ds = db.ExecuteReader(cmd, "TipoUsuario");
+            return ds;
         }
     }
 }
