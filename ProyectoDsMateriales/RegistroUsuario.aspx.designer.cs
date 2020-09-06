@@ -96,6 +96,15 @@ namespace ProyectoDsMateriales
         protected global::System.Web.UI.WebControls.Label lblErrorTelefono;
 
         /// <summary>
+        /// Control ddlSucursal.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlSucursal;
+
+        /// <summary>
         /// Control txtContrasena.
         /// </summary>
         /// <remarks>
@@ -130,15 +139,6 @@ namespace ProyectoDsMateriales
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblErrorContrasenna2;
-
-        /// <summary>
-        /// Control ddlSucursal.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlSucursal;
 
         /// <summary>
         /// Control btnRegistrar.

@@ -40,7 +40,6 @@ namespace ProyectoDsMateriales
             }
             if (txtCorreo.Text.Equals(""))
             {
-
                 puede = false;
                 lblErrorCorreo.Text = "Se debe ingresar el correo electrónico";
             }         
@@ -49,13 +48,9 @@ namespace ProyectoDsMateriales
                 puede = true;
                 lblErrorCorreo.Text = "";
             }
-            if (puede2 == true)
+            if (puede2 == false)
             {
                 lblErrorCorreo.Text = "El correo que ingresó ya se encuentra registrado en la sucursal seleccionada";
-            }
-            else
-            {
-                lblErrorCorreo.Text = "";
             }
             if (txtNombre.Text.Equals(""))
             {
