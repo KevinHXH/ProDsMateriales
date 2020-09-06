@@ -40,6 +40,7 @@ namespace ProyectoDsMateriales
             }
             if (txtCorreo.Text.Equals(""))
             {
+
                 puede = false;
                 lblErrorCorreo.Text = "Se debe ingresar el correo electrónico";
             }         
